@@ -1,5 +1,7 @@
 import { db } from "./firebase.js";
 
+console.log("ADMIN FUNCIONANDO");
+
 import {
   collection,
   getDocs
