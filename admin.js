@@ -9,6 +9,8 @@ async function cargarDatos() {
 
   const querySnapshot = await getDocs(collection(db, "respuestas"));
 
+  console.log("Documentos encontrados:", querySnapshot.size);
+
   const contenedor = document.getElementById("contenedorRespuestas");
 
   querySnapshot.forEach((doc) => {
